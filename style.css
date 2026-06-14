@@ -262,6 +262,21 @@ body::before {
   color: #fff7f0;
 }
 
+.hero-card .card-label {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 9px 16px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fffdf8;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
 .hero-card ul {
   margin: 10px 0 0;
   padding: 0;
