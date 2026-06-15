@@ -154,9 +154,20 @@ body::before {
   padding: 36px 0 24px;
 }
 
+.page-hero {
+  min-height: min(92vh, 860px);
+}
+
+.inner-hero {
+  grid-template-columns: 1fr;
+  min-height: auto;
+  padding: 16px 0 6px;
+}
+
 .hero-copy,
 .hero-card,
 .section,
+.portal-card,
 .story-card,
 .phase-card,
 .advantage-card,
@@ -323,6 +334,46 @@ body::before {
   gap: 22px;
 }
 
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.portal-card {
+  display: block;
+  padding: 28px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 253, 250, 0.78);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(181, 90, 54, 0.26);
+  box-shadow: 0 26px 60px rgba(71, 48, 30, 0.14);
+}
+
+.portal-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.portal-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+}
+
+.portal-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
 .story-grid {
   grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
 }
@@ -375,10 +426,15 @@ body::before {
 .future-card,
 .step-card,
 .model-card,
-.contact-card {
+.contact-card,
+.static-card {
   padding: 28px;
   border-radius: var(--radius-md);
   background: rgba(255, 253, 250, 0.78);
+}
+
+.light-card {
+  background: rgba(255, 250, 244, 0.92);
 }
 
 .story-card span,
@@ -593,6 +649,7 @@ body::before {
   .join-layout,
   .contact-layout,
   .hero,
+  .portal-grid,
   .phase-grid,
   .advantage-grid,
   .future-grid,
@@ -674,6 +731,7 @@ body::before {
 
   .hero-copy,
   .hero-card,
+  .portal-card,
   .story-card,
   .phase-card,
   .advantage-card,
