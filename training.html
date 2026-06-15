@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>中联智慧大学｜中联智汇</title>
-    <meta name="description" content="用于承载培训视频、PPT、PDF、SOP、表格模板等资料的内容中心。" />
+    <meta
+      name="description"
+      content="中联智慧大学内部学习中心，承载培训视频、PPT、PDF、SOP、表格模板等资料。"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,75 +37,126 @@
       <main>
         <section class="hero inner-hero">
           <div class="hero-copy">
-            <p class="eyebrow">Training Center</p>
-            <h1>这里会慢慢变成公司最重要的内容资产库</h1>
+            <p class="eyebrow">Zhonglian Wisdom University</p>
+            <h1>中联智慧大学</h1>
             <p class="hero-intro">
-              培训资料中心未来可以承载视频、PPT、PDF、SOP、表格模板、常见问题和考试资料。
-              这不只是展示页，而是公司内部知识沉淀的开始。
+              这里承载的是公司内部学习资料、制度文件、培训课件与成长方法论。
+              为了保证内部资料不对外公开，进入资料中心前需要先登记员工姓名。
             </p>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section training-gate-section" data-training-gate>
           <div class="section-heading">
-            <p class="section-kicker">Material Categories</p>
-            <h2>中联智慧大学的内容方向</h2>
+            <p class="section-kicker">Employee Access</p>
+            <h2>员工学习入口</h2>
           </div>
-          <div class="portal-grid">
-            <article class="portal-card static-card">
-              <span>01</span>
-              <h3>新人必看</h3>
-              <p>入职流程、公司认知、岗位说明、基础培训视频。</p>
+          <div class="training-gate-card">
+            <div>
+              <p class="training-gate-label">内部权限</p>
+              <h3>请输入员工姓名后进入学习中心</h3>
+              <p class="training-gate-copy">
+                该区域用于公司内部培训，不对外公开。登记姓名后，本设备会自动保留进入状态，方便反复学习。
+              </p>
+            </div>
+            <form class="training-gate-form" data-training-form>
+              <label class="training-field">
+                <span>员工姓名</span>
+                <input
+                  type="text"
+                  name="employeeName"
+                  placeholder="请输入员工姓名"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+              <button class="button primary" type="submit">进入学习中心</button>
+            </form>
+            <div class="training-gate-status" data-training-status aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section training-library is-hidden" data-training-library>
+          <div class="section-heading">
+            <p class="section-kicker">Learning Library</p>
+            <h2>内部学习资料总览</h2>
+          </div>
+          <div class="training-library-head">
+            <div>
+              <p class="training-gate-label">当前登录</p>
+              <strong class="training-user" data-training-user>未登录</strong>
+            </div>
+            <button class="button secondary" type="button" data-training-logout>退出查看</button>
+          </div>
+
+          <div class="training-grid">
+            <article class="training-card training-card-feature">
+              <span>一级入口</span>
+              <h3>新人入职训练营</h3>
+              <p>适合刚入职 30 天内的新同事，先建立公司认知、岗位认知和结果认知。</p>
+              <ul>
+                <li>二级：公司介绍与发展历程</li>
+                <li>二级：OP 机制宣讲</li>
+                <li>三级：入职第一周学习清单</li>
+              </ul>
             </article>
-            <article class="portal-card static-card">
-              <span>02</span>
-              <h3>运营基础</h3>
-              <p>京东国际基础流程、后台操作、常见问题、日常 SOP。</p>
+
+            <article class="training-card">
+              <span>一级入口</span>
+              <h3>运营基础课</h3>
+              <p>聚焦京东国际基础动作、店铺后台操作、日常流程和基础 SOP。</p>
+              <ul>
+                <li>二级：选品与上架</li>
+                <li>二级：链接优化</li>
+                <li>三级：每日数据登记模板</li>
+              </ul>
             </article>
-            <article class="portal-card static-card">
-              <span>03</span>
-              <h3>运营进阶</h3>
-              <p>选品逻辑、利润意识、数据分析、问题复盘、结果提升。</p>
+
+            <article class="training-card">
+              <span>一级入口</span>
+              <h3>利润结果课</h3>
+              <p>围绕利润意识、成本意识、快车投放、复盘能力来建立经营思维。</p>
+              <ul>
+                <li>二级：利润核算逻辑</li>
+                <li>二级：推广费与 ROI</li>
+                <li>三级：亏损问题排查表</li>
+              </ul>
             </article>
-            <article class="portal-card static-card">
-              <span>04</span>
-              <h3>OP进阶</h3>
-              <p>经营意识、管理思维、目标拆解、利润分配与团队协作。</p>
-            </article>
-            <article class="portal-card static-card">
-              <span>05</span>
-              <h3>PPT / PDF 文档</h3>
-              <p>可在线查看，也可以做下载入口，逐步沉淀完整培训体系。</p>
-            </article>
-            <article class="portal-card static-card">
-              <span>06</span>
-              <h3>视频中心</h3>
-              <p>后续可以嵌入视频播放器，做成课程型页面，而不是单纯文件堆放。</p>
+
+            <article class="training-card">
+              <span>一级入口</span>
+              <h3>OP 合伙人进阶</h3>
+              <p>用于从见习 OP、准 OP 走向正式 OP 的成长资料与评审标准学习。</p>
+              <ul>
+                <li>二级：晋升评审维度</li>
+                <li>二级：周复盘模板</li>
+                <li>三级：正式 OP 资格标准</li>
+              </ul>
             </article>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section training-documents is-hidden" data-training-library>
           <div class="section-heading">
-            <p class="section-kicker">Current Documents</p>
-            <h2>目前已经在整理的制度资料</h2>
+            <p class="section-kicker">Current Files</p>
+            <h2>当前制度资料</h2>
           </div>
           <div class="phase-grid">
             <article class="phase-card">
               <h3>新人 OP 合伙人机制宣讲稿</h3>
-              <p>适合做新人入职前必读材料。里面已经完整讲清楚为什么做 OP、4 个成长阶段、分红逻辑和公司对新人的要求。</p>
+              <p>用于新人入职前必读，系统讲清为什么做 OP、4 个成长阶段、分红逻辑和公司对新人的要求。</p>
             </article>
             <article class="phase-card">
               <h3>新人薪酬结构确认书</h3>
-              <p>适合放在“新人入职说明”或“薪酬制度说明”分类里，帮助新人提前理解保障收入、基础工资和 OP 分红切换逻辑。</p>
+              <p>用于帮助新人提前理解保障收入、基础工资和 OP 分红切换逻辑，减少认知偏差。</p>
             </article>
             <article class="phase-card">
               <h3>OP 合伙人晋升评审表</h3>
-              <p>适合放在“OP进阶资料”分类里，展示评审的关键维度，包括利润结果、执行动作、数据意识、学习复盘和价值观。</p>
+              <p>用于展示利润结果、执行动作、数据意识、学习复盘和价值观等关键评审维度。</p>
             </article>
             <article class="phase-card">
-              <h3>后续可直接扩展</h3>
-              <p>等你把视频、PPT、PDF、图片整理出来后，这个页面就可以继续升级为可下载、可在线查看、可分类学习的真正资料中心。</p>
+              <h3>后续扩展方向</h3>
+              <p>后续可以继续接入视频、PPT、PDF、SOP、考试题库与学习进度记录，逐步升级为完整的内部学习系统。</p>
             </article>
           </div>
         </section>
