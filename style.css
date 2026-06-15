@@ -105,9 +105,9 @@ body::before {
 }
 
 .portal-hero-copy p {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   color: #413629;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
 }
 
@@ -174,7 +174,7 @@ body::before {
 }
 
 .portal-row-blue {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .portal-stack {
@@ -214,7 +214,7 @@ body::before {
   position: relative;
   z-index: 2;
   color: #fff;
-  font-size: 1.12rem;
+  font-size: 1.04rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.55;
@@ -226,7 +226,7 @@ body::before {
   z-index: 2;
   margin-top: 6px;
   color: rgba(255, 255, 255, 0.85);
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -509,7 +509,7 @@ body::before {
 
 .portal-about-links {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   padding: 8px 8px 20px;
 }
@@ -1349,7 +1349,6 @@ body::before {
 
   .portal-row,
   .portal-row-green,
-  .portal-row-blue,
   .portal-about-links {
     grid-template-columns: 1fr;
   }
@@ -1358,18 +1357,43 @@ body::before {
     grid-template-columns: 1fr;
   }
 
+  .portal-row-blue {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portal-row-blue .portal-tile-large {
+    min-height: 168px;
+  }
+
+  .portal-row-blue .portal-tile-large:last-child {
+    grid-column: 2 / 3;
+  }
+
   .portal-tile,
   .portal-tile-large {
     min-height: 92px;
   }
 
   .portal-hero-copy h1 {
-    font-size: 1.8rem;
-    line-height: 1.3;
+    font-size: 1.56rem;
+    line-height: 1.25;
   }
 
   .portal-hero-copy p {
+    font-size: 0.84rem;
+  }
+
+  .portal-tile-title {
     font-size: 0.92rem;
+  }
+
+  .portal-tile-subtitle {
+    font-size: 0.66rem;
+    line-height: 1.45;
+  }
+
+  .portal-about-link strong {
+    font-size: 0.9rem;
   }
 
   .training-library-head {
